@@ -1,0 +1,36 @@
+img{
+    max-width: 100%;
+}
+
+[editable] {
+    border-bottom: dashed 1px #428bca;
+    color: #428bca;
+    text-decoration: none;
+    cursor: pointer;
+}
+[editable]:hover{
+    text-decoration: none;
+}
+[editable]:empty::before {
+    content: 'Not set';
+    color: #dd1144;
+    font-style: italic;
+
+}
+li{
+    position: relative;
+}
+
+button.btn-primary, 
+button.btn-danger{
+    padding: 2px 5px;
+    font-size: 12px;
+}
+.btn-primary{
+    margin: 0 5px;
+}
+input{
+
+    height: 30px;
+    border-radius: 5px;
+}
