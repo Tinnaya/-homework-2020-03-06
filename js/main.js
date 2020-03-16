@@ -28,9 +28,8 @@ function  cickHandler(event) {
 	buttonDanger.appendChild(spanDanger);
 	inputElement.value = targetElement.innerText;
 
-	// targetElement.parentNode.removeChild(targetElement);
+
 	targetElement.remove();
-	// inputElement.focus();
 	inputElement.select();
 
 	inputElement.addEventListener('keyup', function(event) {
@@ -38,7 +37,6 @@ function  cickHandler(event) {
 			case 13: //save
 				inputElement.parentNode.appendChild(targetElement);
 				targetElement.innerText = this.value;
-				// targetElement.innerText = inputElement.value; или так
 				inputElement.remove();
 				break;
 			case 27://cancel
@@ -52,7 +50,6 @@ function  cickHandler(event) {
 	buttonPrimary.addEventListener('click', function() {
 		inputElement.parentNode.appendChild(targetElement);
 		targetElement.innerText = inputElement.value;
-		// targetElement.innerText = inputElement.value; или так
 		inputElement.remove();
 		this.remove();
 		buttonDanger.remove();
